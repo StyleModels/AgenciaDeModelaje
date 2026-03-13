@@ -1,0 +1,1274 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Montserrat', sans-serif;
+background:#000;
+color:#fff;
+
+}
+
+/* NAVBAR */
+
+.navegar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 80px;
+background:#000;
+
+}
+
+.logo span{
+
+font-family:'Playfair Display', serif;
+font-size:26px;
+color:#d4af37;
+letter-spacing:4px;
+
+}
+
+.logo p{
+
+font-size:12px;
+letter-spacing:3px;
+
+}
+
+.menu{
+
+display:flex;
+gap:30px;
+list-style:none;
+
+}
+
+.menu a{
+
+color:white;
+text-decoration:none;
+font-size:14px;
+letter-spacing:2px;
+
+}
+
+.menu a:hover{
+
+color:#d4af37;
+
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+background-image: url("C:\Users\admin\Desktop\HTML, CSS, JS\PaginaOficialStyleModels\Imagenes\FondoInicio.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+
+.hero-content h4{
+
+color:#d4af37;
+letter-spacing:5px;
+margin-bottom:20px;
+
+}
+
+.hero-content h1{
+
+font-family:'Playfair Display', serif;
+font-size:70px;
+
+}
+
+.white{
+
+color:white;
+
+}
+
+.gold{
+
+color:#d4af37;
+
+}
+
+.hero-content p{
+
+margin-top:20px;
+color:#ccc;
+
+}
+
+.btn{
+
+display:inline-block;
+margin-top:30px;
+padding:15px 40px;
+border:1px solid #d4af37;
+color:#d4af37;
+text-decoration:none;
+letter-spacing:3px;
+
+}
+
+/* ABOUT */
+
+.about{
+
+padding:120px 80px;
+
+}
+
+.about-header{
+
+text-align:center;
+margin-bottom:60px;
+
+}
+
+.subtitle{
+
+color:#d4af37;
+letter-spacing:5px;
+
+}
+
+.about-header h2{
+
+font-family:'Playfair Display', serif;
+font-size:50px;
+
+}
+
+.about-container{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+
+}
+
+.about-img img{
+
+width:100%;
+
+}
+
+/* VALORES */
+
+.valores{
+
+padding:120px 80px;
+text-align:center;
+
+}
+
+.valores-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+margin-top:50px;
+
+}
+
+.valor{
+
+border:1px solid #d4af37;
+padding:30px;
+
+}
+
+.valor p{
+
+color:#ccc;
+
+}
+
+/* HEADER */
+
+.header{
+
+width:100%;
+background:black;
+border-bottom:1px solid #111;
+
+}
+
+/* CONTENEDOR GENERAL */
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
+/* NAVBAR */
+
+.nav-container{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+height:90px;
+
+}
+
+/* LOGO */
+
+.logo span{
+
+font-family:'Playfair Display', serif;
+font-size:28px;
+color:#d4af37;
+letter-spacing:6px;
+
+}
+
+.logo p{
+
+font-size:12px;
+letter-spacing:4px;
+color:white;
+
+}
+
+/* MENU */
+
+.menu{
+
+display:flex;
+gap:40px;
+list-style:none;
+
+}
+
+.menu a{
+
+text-decoration:none;
+color:white;
+font-size:14px;
+letter-spacing:2px;
+transition:0.3s;
+
+}
+
+.menu a:hover{
+
+color:#d4af37;
+
+}
+
+
+/* PORTFOLIO HERO */
+
+.portfolio-hero{
+
+padding:120px 0;
+text-align:center;
+background:#050505;
+
+}
+
+.portfolio-hero h1{
+
+font-family:'Playfair Display', serif;
+font-size:60px;
+letter-spacing:5px;
+
+}
+
+.portfolio-hero p{
+
+margin-top:20px;
+color:#bbb;
+
+}
+
+
+/* GALERIA */
+
+.portfolio{
+
+padding:100px 0;
+
+}
+
+.portfolio-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+.model{
+
+position:relative;
+overflow:hidden;
+
+}
+
+.model img{
+
+width:100%;
+display:block;
+transition:0.4s;
+
+}
+
+.model:hover img{
+
+transform:scale(1.1);
+
+}
+
+/* OVERLAY */
+
+.overlay{
+
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+background:rgba(0,0,0,0.6);
+color:white;
+padding:20px;
+text-align:center;
+opacity:0;
+transition:0.4s;
+
+}
+
+.model:hover .overlay{
+
+opacity:1;
+
+}
+
+.overlay h3{
+
+color:#d4af37;
+letter-spacing:3px;
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.portfolio-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.portfolio-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+/* ========================= */
+/* ESTILOS SOLO PARA NOSOTROS.HTML */
+/* ========================= */
+
+/* CONTENEDOR GENERAL */
+.about{
+padding:120px 80px;
+}
+
+/* TITULO */
+.about h1{
+font-family:'Playfair Display', serif;
+font-size:50px;
+margin-bottom:50px;
+}
+
+/* SUBTITULO */
+.subtitle{
+color:#d4af37;
+letter-spacing:4px;
+margin-bottom:10px;
+}
+
+/* CONTENIDO TEXTO + IMAGEN */
+
+.about-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+margin-top:40px;
+}
+
+.about-text h2{
+font-family:'Playfair Display', serif;
+margin-bottom:20px;
+}
+
+.about-text p{
+color:#ccc;
+line-height:1.8;
+margin-bottom:20px;
+}
+
+/* IMAGEN */
+
+.about-image img{
+width:100%;
+}
+
+/* ESTADISTICAS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:40px;
+margin-top:80px;
+text-align:center;
+}
+
+.stat h3{
+font-size:40px;
+color:#d4af37;
+}
+
+.stat p{
+font-size:13px;
+letter-spacing:2px;
+margin-top:10px;
+color:#aaa;
+}
+
+/* VALORES */
+
+.values-title{
+font-family:'Playfair Display', serif;
+font-size:40px;
+text-align:center;
+margin-top:120px;
+margin-bottom:40px;
+}
+
+.values{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.value-card{
+border:1px solid #d4af37;
+padding:30px;
+text-align:center;
+}
+
+.value-card h3{
+color:#d4af37;
+margin-bottom:15px;
+letter-spacing:2px;
+}
+
+.value-card p{
+color:#ccc;
+font-size:14px;
+}
+
+/* FRASE */
+
+.quote{
+text-align:center;
+margin-top:80px;
+font-style:italic;
+color:#bbb;
+}
+
+.quote span{
+display:block;
+margin-top:10px;
+color:#d4af37;
+}
+
+/* ========================= */
+/* PORTAFOLIO PAGE */
+/* ========================= */
+
+.portfolio-hero{
+
+text-align:center;
+padding:120px 20px;
+background:#050505;
+
+}
+
+.portfolio-hero h1{
+
+font-family:'Playfair Display', serif;
+font-size:70px;
+letter-spacing:6px;
+margin:20px 0;
+
+
+}
+
+.portfolio-text{
+
+max-width:700px;
+margin:auto;
+color:#aaa;
+line-height:1.6;
+
+}
+
+/* GALERIA MODELOS */
+
+.portfolio-models{
+
+padding:80px 80px;
+
+}
+
+.portfolio-grid{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+
+}
+
+/* CARD MODELO */
+
+.model-card{
+
+position:relative;
+overflow:hidden;
+
+}
+
+.model-card img{
+
+width:100%;
+display:block;
+transition:0.4s;
+
+}
+
+/* HOVER */
+
+.model-card:hover img{
+
+transform:scale(1.1);
+filter:brightness(60%);
+
+}
+
+/* NOMBRE */
+
+.model-name{
+
+position:absolute;
+bottom:20px;
+left:20px;
+color:white;
+font-size:14px;
+letter-spacing:3px;
+font-family:'Playfair Display', serif;
+
+}
+
+/* FOOTER */
+
+.portfolio-footer{
+
+text-align:center;
+padding:60px 20px;
+letter-spacing:4px;
+color:#888;
+font-size:13px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+.portfolio-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.portfolio-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* LOOKBOOK */
+
+.lookbook-page{
+background:black;
+color:white;
+font-family:'Playfair Display', serif;
+}
+
+/* titulo */
+
+.lookbook-header{
+text-align:center;
+padding:80px 20px 50px 20px;
+}
+
+.lookbook-header .coleccion{
+letter-spacing:6px;
+font-size:14px;
+color:#c9a227;
+margin-bottom:10px;
+}
+
+.lookbook-header h1{
+font-size:70px;
+letter-spacing:8px;
+font-weight:300;
+margin-bottom:20px;
+}
+
+.linea{
+width:80px;
+height:2px;
+background:#c9a227;
+margin:auto;
+}
+
+/* grid */
+
+.lookbook-grid{
+width:90%;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+padding-bottom:60px;
+}
+
+.lookbook-item{
+position:relative;
+overflow:hidden;
+}
+
+.lookbook-item img{
+width:100%;
+height:420px;
+object-fit:cover;
+display:block;
+transition:0.4s;
+}
+
+.lookbook-item:hover img{
+transform:scale(1.05);
+}
+
+.lookbook-item span{
+position:absolute;
+bottom:20px;
+left:20px;
+font-size:18px;
+letter-spacing:3px;
+}
+
+/* footer */
+
+.lookbook-footer{
+text-align:center;
+padding:40px;
+letter-spacing:4px;
+font-size:12px;
+color:#aaa;
+}
+
+
+/* ===== SERVICIOS ===== */
+
+.servicios-page{
+background:#0a0a0a;
+color:white;
+font-family:'Playfair Display', serif;
+}
+
+
+/* titulo */
+
+.servicios-header{
+text-align:center;
+padding:90px 20px 50px;
+}
+
+.servicios-sub{
+color:#c9a227;
+letter-spacing:6px;
+font-size:14px;
+margin-bottom:10px;
+padding-top:60px;
+text-align:center;
+}
+
+.servicios-header h1{
+font-size:70px;
+letter-spacing:6px;
+font-weight:300;
+margin-bottom:20px;
+}
+
+.linea-servicios{
+width:70px;
+height:2px;
+background:#c9a227;
+margin:auto;
+}
+
+
+
+/* grid */
+
+.servicios-grid{
+
+width:85%;
+margin:auto;
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+padding-bottom:80px;
+
+}
+
+
+/* card */
+
+.servicio-card{
+
+border:1px solid rgba(201,162,39,0.4);
+padding:40px;
+transition:0.4s;
+
+}
+
+.servicio-card:hover{
+border:1px solid #c9a227;
+transform:translateY(-5px);
+}
+
+
+/* icono */
+
+.icono{
+
+width:50px;
+height:50px;
+
+border:1px solid #c9a227;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+margin-bottom:20px;
+}
+
+.icono i{
+color:#c9a227;
+font-size:20px;
+}
+
+
+/* titulos */
+
+.servicio-card h2{
+
+letter-spacing:4px;
+font-weight:400;
+
+margin-bottom:15px;
+}
+
+
+/* texto */
+
+.servicio-card p{
+
+color:#aaa;
+line-height:1.6;
+margin-bottom:20px;
+
+}
+
+
+/* tags */
+
+.tags span{
+
+border:1px solid #c9a227;
+
+padding:6px 12px;
+
+margin-right:10px;
+
+font-size:12px;
+
+display:inline-block;
+
+margin-bottom:8px;
+
+color:#c9a227;
+
+}
+
+
+
+/* CTA */
+
+.servicios-cta{
+
+text-align:center;
+
+padding:60px 20px;
+
+}
+
+.servicios-cta p{
+
+margin-bottom:30px;
+
+color:#ccc;
+
+letter-spacing:2px;
+
+}
+
+.btn-servicios{
+
+border:1px solid #c9a227;
+
+padding:15px 40px;
+
+text-decoration:none;
+
+color:#c9a227;
+
+letter-spacing:3px;
+
+transition:0.3s;
+
+}
+
+.btn-servicios:hover{
+
+background:#c9a227;
+
+color:black;
+
+}
+
+/* ===== CONTACTO ===== */
+
+.contacto-page{
+background:#070707;
+color:white;
+font-family:'Playfair Display', serif;
+}
+
+
+
+/* TITULO */
+
+.contacto-header{
+text-align:center;
+padding:90px 20px 60px;
+}
+
+.contacto-sub{
+color:#c9a227;
+letter-spacing:6px;
+font-size:14px;
+margin-bottom:10px;
+padding-top:60px;
+text-align:center;
+}
+
+.contacto-header h1{
+font-size:70px;
+letter-spacing:6px;
+font-weight:300;
+margin-bottom:20px;
+}
+
+.linea-contacto{
+width:70px;
+height:2px;
+background:#c9a227;
+margin:auto;
+}
+
+
+
+/* CONTENEDOR */
+
+.contacto-contenedor{
+
+width:85%;
+margin:auto;
+
+display:grid;
+grid-template-columns:1fr 1fr;
+
+gap:80px;
+
+padding-bottom:80px;
+
+}
+
+
+
+/* INFO */
+
+.contacto-info h2{
+font-size:28px;
+letter-spacing:3px;
+margin-bottom:20px;
+}
+
+.contacto-info p{
+color:#aaa;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+
+
+/* ITEMS */
+
+.info-item{
+
+display:flex;
+align-items:flex-start;
+
+gap:20px;
+
+margin-bottom:25px;
+
+}
+
+.icono-contacto{
+
+width:45px;
+height:45px;
+
+border:1px solid #c9a227;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+.icono-contacto i{
+color:#c9a227;
+}
+
+.info-item h4{
+color:#c9a227;
+letter-spacing:2px;
+font-size:12px;
+margin-bottom:5px;
+}
+
+
+
+/* HORARIO */
+
+.horario{
+
+border:1px solid rgba(201,162,39,0.3);
+
+padding:25px;
+
+margin-top:40px;
+
+}
+
+.horario h4{
+color:#c9a227;
+letter-spacing:3px;
+margin-bottom:20px;
+}
+
+.horario-item{
+
+display:flex;
+justify-content:space-between;
+
+margin-bottom:10px;
+
+color:#aaa;
+
+}
+
+
+
+/* FORMULARIO */
+
+.contacto-form input,
+.contacto-form textarea{
+
+width:100%;
+
+background:transparent;
+
+border:none;
+
+border-bottom:1px solid rgba(201,162,39,0.4);
+
+padding:15px 0;
+
+margin-bottom:30px;
+
+color:white;
+
+font-size:14px;
+
+}
+
+.contacto-form textarea{
+height:120px;
+resize:none;
+}
+
+
+
+.contacto-form button{
+
+width:100%;
+
+padding:18px;
+
+background:transparent;
+
+border:1px solid #c9a227;
+
+color:#c9a227;
+
+letter-spacing:3px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.contacto-form button:hover{
+
+background:#c9a227;
+
+color:black;
+
+}
+
+
+
+/* FOOTER */
+
+.footer-contacto{
+
+border-top:1px solid rgba(201,162,39,0.2);
+
+margin-top:80px;
+
+padding:40px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+color:#aaa;
+
+font-size:14px;
+
+}
+
+.footer-logo{
+color:#c9a227;
+letter-spacing:4px;
+}
+
+.white{
+font-size:90px;
+}
+
+/* ===== BARRA DE MENU TRANSPARENTE ===== */
+
+.header{
+
+background: rgba(0,0,0,0.55); /* negro con transparencia */
+
+backdrop-filter: blur(6px); /* efecto vidrio elegante */
+
+border-bottom: 1px solid #c9a227; /* línea dorada abajo */
+
+position: fixed;
+
+width: 100%;
+
+top: 0;
+
+left: 0;
+
+z-index: 1000;
+
+}
+
+/* ===== EFECTO HOVER MENU ===== */
+
+.menu li a{
+color: white;
+text-decoration: none;
+position: relative;
+transition: color 0.3s ease;
+}
+
+
+/* texto dorado al pasar el mouse */
+.menu li a:hover{
+color:#c9a227;
+}
+
+
+/* linea dorada oculta */
+.menu li a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+bottom:-5px;
+
+width:0;
+
+height:2px;
+
+background:#c9a227;
+
+transition:width 0.3s ease;
+
+}
+
+
+/* linea aparece al pasar el mouse */
+.menu li a:hover::after{
+
+width:100%;
+
+}
+
+/* ===== ARREGLO LOOKBOOK HEADER ===== */
+
+.lookbook-header{
+
+padding-top:160px;
+
+text-align:center;
+
+}
+
+
+.portfolio-hero .subtitle{
+
+color:#c9a227;
+
+letter-spacing:8px;
+
+font-size:14px;
+
+text-transform:uppercase;
+
+}
+
+/* ===== ESTILO COLECCION LOOKBOOK ===== */
+
+.lookbook-header .coleccion{
+
+color:#c9a227;      /* dorado */
+
+letter-spacing:8px;
+
+font-size:14px;
+
+text-transform:uppercase;
+
+font-weight:500;
+
+}
+
+.section-subtitle{
+color:#c9a227;
+letter-spacing:8px;
+font-size:14px;
+text-transform:uppercase;
+}
+
+/* ===== IMAGEN NOSOTROS ===== */
+
+.about-image img{
+
+width:80%;       /* hace la imagen más pequeña */
+
+max-width:420px; /* tamaño máximo */
+
+height:auto;
+
+border-radius:6px;
+
+display:block;
+
+margin:auto;
+
+}
+
+/* ===== CORRECCIÓN TIPOGRAFÍA DEL MENU EN LOOKBOOK ===== */
+
+.lookbook-page .menu a{
+font-family:'Montserrat', sans-serif;
+font-size:14px;
+letter-spacing:2px;
+}

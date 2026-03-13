@@ -1,0 +1,1 @@
+console.log("Style Models website loaded");
