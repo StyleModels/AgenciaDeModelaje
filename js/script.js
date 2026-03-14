@@ -6,11 +6,11 @@ fetch("./menu.html")
 
 document.getElementById("menu-container").innerHTML = data;
 
-/* REINICIAR BOOTSTRAP PARA EL MENU */
+/* activar bootstrap collapse */
 
-var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
-collapseElementList.map(function (collapseEl) {
-return new bootstrap.Collapse(collapseEl, {
+var collapseTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="collapse"]'))
+collapseTriggerList.map(function (collapseTriggerEl) {
+return new bootstrap.Collapse(document.querySelector(collapseTriggerEl.getAttribute("data-bs-target")), {
 toggle: false
 })
 })
