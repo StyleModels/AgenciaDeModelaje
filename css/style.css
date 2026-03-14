@@ -1347,3 +1347,11 @@ transform: translateY(-100%);
     width: auto;
     display: block;
 }
+
+.navbar-toggler{
+border: none;
+}
+
+.navbar-toggler-icon{
+filter: invert(1);
+}
