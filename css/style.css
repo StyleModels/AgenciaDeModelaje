@@ -68,7 +68,7 @@ color:#d4af37;
 .hero{
 
 height:100vh;
-background-image: url("C:\Users\admin\Desktop\HTML, CSS, JS\PaginaOficialStyleModels\Imagenes\FondoInicio.png");
+background-image: url("../img/FondoInicio.png");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
