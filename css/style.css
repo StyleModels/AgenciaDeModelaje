@@ -27,9 +27,9 @@ background:#000;
 .logo span{
 
 font-family:'Playfair Display', serif;
-font-size:26px;
+font-size:2px;
 color:#d4af37;
-letter-spacing:4px;
+letter-spacing:1px;
 
 }
 
@@ -1307,4 +1307,43 @@ transition: transform 0.4s ease;
 
 .header.hide-menu{
 transform: translateY(-100%);
+}
+
+/* Header fijo */
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.4s ease;
+    z-index: 1000;
+}
+
+/* Cuando se oculta */
+.header.hide{
+    top: -120px;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px; /* altura del menu */
+}
+
+.logo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.logocontac img{
+    height: 100px;
+    width: auto;
+    display: block;
 }
