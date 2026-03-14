@@ -1272,3 +1272,10 @@ font-family:'Montserrat', sans-serif;
 font-size:14px;
 letter-spacing:2px;
 }
+
+/* ===== AJUSTE TEXTO SECCION NOSOTROS ===== */
+
+.about-text{
+margin-left:40px;   /* mueve el texto un poco hacia la derecha */
+max-width:520px;    /* mantiene el bloque de texto más elegante */
+}
