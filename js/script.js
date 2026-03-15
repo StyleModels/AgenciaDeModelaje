@@ -1,20 +1,87 @@
-document.addEventListener("DOMContentLoaded", function(){
+/* CARGAR MENU GLOBAL */
 
-fetch("./menu.html")
+fetch("menu.html")
 .then(response => response.text())
 .then(data => {
 
 document.getElementById("menu-container").innerHTML = data;
 
-/* activar bootstrap collapse */
+initMenu();
 
-var collapseTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="collapse"]'))
-collapseTriggerList.map(function (collapseTriggerEl) {
-return new bootstrap.Collapse(document.querySelector(collapseTriggerEl.getAttribute("data-bs-target")), {
-toggle: false
-})
-})
+});
 
-})
 
-})
+/* FUNCION PRINCIPAL DEL MENU */
+
+function initMenu(){
+
+const header = document.querySelector(".navbar-stylemodels");
+
+let lastScroll = 0;
+let hideTimer;
+
+
+/* detectar si es pantalla grande */
+
+function isDesktop(){
+return window.innerWidth > 992;
+}
+
+
+/* OCULTAR AL BAJAR SCROLL (PC Y CELULAR) */
+
+window.addEventListener("scroll", function(){
+
+let currentScroll = window.pageYOffset;
+
+if(currentScroll > lastScroll){
+
+header.style.top = "-90px";
+
+}else{
+
+header.style.top = "0";
+
+}
+
+lastScroll = currentScroll;
+
+resetTimer();
+
+});
+
+
+/* OCULTAR SI NO SE USA (SOLO PC) */
+
+function resetTimer(){
+
+if(!isDesktop()) return;
+
+clearTimeout(hideTimer);
+
+hideTimer = setTimeout(function(){
+
+header.style.top = "-90px";
+
+},3000);
+
+}
+
+
+/* MOSTRAR CUANDO EL CURSOR PASA ARRIBA (SOLO PC) */
+
+document.addEventListener("mousemove", function(e){
+
+if(!isDesktop()) return;
+
+if(e.clientY < 80){
+
+header.style.top = "0";
+
+resetTimer();
+
+}
+
+});
+
+}
