@@ -909,3 +909,46 @@ color:white;
 letter-spacing:1px;
 
 }
+
+.portfolio-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: #000; /* puedes cambiarlo si quieres */
+    text-align: center;
+}
+
+.footer-slogan {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    letter-spacing: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px 20px;
+}
+
+/* Punto central con estilo */
+.footer-slogan span {
+    color: #c9a86a; /* dorado elegante */
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+/* Línea decorativa elegante */
+.footer-slogan::before,
+.footer-slogan::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: #c9a86a;
+    margin: 10px auto;
+}
+
+/* Efecto hover elegante */
+.footer-slogan:hover {
+    letter-spacing: 6px;
+    transition: 0.3s ease;
+}
