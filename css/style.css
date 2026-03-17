@@ -931,7 +931,7 @@ letter-spacing:1px;
 
 /* Punto central con estilo */
 .footer-slogan span {
-    color: #c9a86a; /* dorado elegante */
+    color: #c9a227; /* dorado elegante */
     margin: 0 10px;
     font-size: 24px;
 }
@@ -943,7 +943,7 @@ letter-spacing:1px;
     display: block;
     width: 60px;
     height: 1px;
-    background: #c9a86a;
+    background: #c9a227;
     margin: 10px auto;
 }
 
@@ -951,4 +951,56 @@ letter-spacing:1px;
 .footer-slogan:hover {
     letter-spacing: 6px;
     transition: 0.3s ease;
+}
+
+.lookbook-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: #0a0a0a; /* negro más suave */
+    text-align: center;
+}
+
+/* Estilo del slogan */
+.lookbook-slogan {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px 30px;
+}
+
+/* Punto separador elegante */
+.lookbook-slogan span {
+    color: #d4af37; /* dorado más brillante */
+    margin: 0 12px;
+    font-size: 22px;
+}
+
+/* Líneas laterales (diferente al anterior) */
+.lookbook-slogan::before,
+.lookbook-slogan::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 1px;
+    background: #d4af37;
+}
+
+.lookbook-slogan::before {
+    left: -90px;
+}
+
+.lookbook-slogan::after {
+    right: -90px;
+}
+
+/* Animación sutil */
+.lookbook-slogan:hover {
+    letter-spacing: 7px;
+    transition: all 0.3s ease;
 }
